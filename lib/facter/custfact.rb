@@ -1,7 +1,7 @@
 Facter.add(:role) do
   setcode do
     custrole = Facter.value('hostname').to_s
-    custrolearray = split.custrole("-")
+    custrolearray = custrole.split("-")
     role = custrolearray[2]
     if role == 'db'
       'db'
