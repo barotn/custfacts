@@ -10,7 +10,7 @@ Facter.add(:role) do
     elsif role == 'app'
       'app'
     else
-       nil
+      'nil'
     end
   end
 end

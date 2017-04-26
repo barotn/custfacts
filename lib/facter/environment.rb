@@ -7,7 +7,7 @@ Facter.add(:environment) do
     elsif custenv == 'p'
       'production'
     else
-       nil
+      'nil'
     end
   end
 end
