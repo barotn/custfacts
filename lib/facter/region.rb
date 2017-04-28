@@ -6,7 +6,7 @@ Facter.add(:region) do
       'eu-west'
     elsif region == 'ce'
       'eu-central'
-    elsif
+    else
       'region not specified'
     end
   end
