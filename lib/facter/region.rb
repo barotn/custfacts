@@ -3,9 +3,9 @@ Facter.add(:region) do
     custregion = Facter.value('hostname').to_s
     region = custregion.split('-')[0][2,2]
     if region == 'we'
-      'eu-west'
+      'euwest'
     elsif region == 'ce'
-      'eu-central'
+      'eucentral'
     else
       'region not specified'
     end
