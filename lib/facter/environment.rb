@@ -4,6 +4,10 @@ Facter.add(:environment) do
     custenv = custenv[5,1]
     if custenv == 'd'
       'development'
+    elsif custenv == 't'
+      'test'
+    elsif custenv == 'u'
+      'preproduction'
     elsif custenv == 'p'
       'production'
     else
